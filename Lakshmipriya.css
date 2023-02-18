@@ -3,6 +3,8 @@
     margin: 0;
     padding: 0;
 }
+
+/*margin: top right bottom left */
 html, body {
     margin: 0;
     padding: 0;
@@ -46,6 +48,28 @@ we add the
     }
 }
 
+.nameee{
+    font-family: 'Shantell Sans', cursive;
+    text-align: center;
+    font-size: 8em;
+    font-size: 50px;
+    margin-bottom: auto;
+    align-items: center;
+    margin-left: 40%;    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .side-nav{
@@ -55,12 +79,13 @@ we add the
 .side-nav li{
     list-style: none;
     list-style-type: none;
+    
     margin-bottom: 20px;
-    transform: translateY(30px);
     margin-left: 25px;
 }
 
 .side-nav ul {
+    transform: translateY(70px);
     list-style: none;
 }
 
@@ -69,9 +94,23 @@ we add the
 }
 
 .side-nav a:hover + .icon-desc{
-    display: block;
+    display:inline-block;
+    font-family: "Blippo", fantasy;
+    vertical-align: middle;
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 .menu-area{
     align-self: flex-start;
@@ -79,7 +118,6 @@ we add the
 .menu{
     align-self: flex-start;
     text-align: right;
-   /* margin-top: -80px;*/
     transform: translateY(-10px);
     text-decoration: none;
 }
@@ -98,6 +136,15 @@ we add the
 }
 
 
+
+
+
+
+
+
+
+
+
 .material-symbols-outlined {
     list-style: none;
     font-variation-settings:
@@ -107,6 +154,12 @@ we add the
     'opsz' 48
     
   }
+
+
+
+
+
+
 
 
 .gif-1{
@@ -121,15 +174,206 @@ we add the
     margin-top: -20%;
     text-align: center;
     /*font-size: 8em;*/
-    font-size: 60px;
+    font-size: 50px;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-bottom: auto;
+    align-items: center;
+    margin-left: 40%;
+}
+.caption-2 {
+    text-align: center;
+    /*font-size: 8em;*/
+    font-size: 50px;
     font-family: 'Josefin Sans', sans-serif;
     margin-bottom: auto;
     align-items: center;
     margin-left: 40%;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .about {
     height: 100vh;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: hsl(263deg 29% 32%);
+}
+
+
+
+
+
+.skills{
+    transform: translateY(20%) translateX(20%);
+    border-radius: 20px;
+    height: 30%;
+    width: 30%;
+    position:relative;
+    border: solid 2px white;
+   /* padding: 1rem 1rem 1rem;*/
+}
+
+
+
+.skills .circles {
+    display: flex;
+    justify-content:left;
+}
+  
+.skills .circle {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: white;
+    margin: 1rem 0.75rem 1rem;
+    /*margin-bottom: 0.5rem;*/
+}
+
+.skills .line {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 2px;
+    margin-top: 3rem;
+    background-color: white;
+}
+
+
+.skills .h2{
+    padding-top: 1rem;
+    margin-top: 2rem;
+}
+.skills .p{
+    padding-top: 1rem;
+    margin-top: 0.5rem;
+}
+
+
+
+
+
+
+
+.courses{
+    transform: translateY(-30%);
+    border-radius: 20px;
+    margin-left: 50%;
+    height: 30%;
+    width: 40%;
+    position:relative;
+    border: solid 2px white;
+
+}
+
+.courses .circles {
+    display: flex;
+    justify-content:left;
+}
+  
+.courses .circle {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: white;
+    margin: 1rem 0.75rem 1rem;
+    /*margin-bottom: 0.5rem;*/
+}
+
+.courses .line {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 2px;
+    margin-top: 3rem;
+    background-color: white;
+}
+
+
+.courses .h2{
+    padding-top: 1rem;
+    margin-top: 2rem;
+}
+.courses .p{
+    padding-top: 1rem;
+    margin-top: 0.5rem;
+}
+
+
+
+
+
+
+
+
+.why-me{
+   transform: translateY(10%) translateX(10%);
+    border-radius: 20px;
+    height: 30%;
+    width: 80%;
+    position:relative;
+    border: solid 2px white;
+
+}
+
+.why-me .circles {
+    display: flex;
+    justify-content:left;
+}
+  
+.why-me .circle {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: white;
+    margin: 1rem 0.75rem 1rem;
+    /*margin-bottom: 0.5rem;*/
+}
+
+.why-me .line {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 2px;
+    margin-top: 3rem;
+    background-color: white;
+}
+
+
+.why-me .h2{
+    padding-top: 1rem;
+    margin-top: 2rem;
+}
+.why-me .p{
+    padding-top: 1rem;
+    margin-top: 0.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.interest {
+    height: 100vh;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: hsl(274deg 4% 16%);
 }
 
 
