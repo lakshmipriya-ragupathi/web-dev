@@ -4,6 +4,9 @@
     padding: 0;
 }
 
+
+@-ms-viewport{ width: device-width; }
+
 /*margin: top right bottom left */
 html, body {
     margin: 0;
@@ -12,33 +15,23 @@ html, body {
 .intro {
     height: 100vh;
     width: 100%;
-    margin-top: 0px;
-    box-sizing: border-box !important;
     /*to make double coloured background using linear gradient*/
     background: linear-gradient(to right, rgb(42, 35, 42) 0%,  rgb(42, 35, 42) 30%, rgb(117, 76, 110) 30%, rgb(117, 76, 110) 100%);
  }
 
 
 .name-top{
-    font-family: "Blippo", fantasy;
-    text-align: left;
+    font-family: 'Dancing Script', cursive;
     font-weight: bolder;
-    font-size: 30px;
-    margin-left: 20px;
-    transform: translateY(20px);
+    font-size: 3rem;
     animation: neon 2s ease infinite;
+    text-align: center;
 }
-
-/*keyframes: used for animation, we can have in this format:
-from {} to {} or specify what to do in intervals of total time i.e. 0% 50% 100%, etc
-if you dont specify 0%, the text will not be shown till the next percentage of time
-we add the 
-*/
 
 @keyframes neon {
     0%,
     40%{
-        /*offset-x(mandatory) | offset-y(mandatory) | blur-radius | color*/
+        offset-x(mandatory) | offset-y(mandatory) | blur-radius | color
         text-shadow: 0 0 2px #6e3f56;
         color: #ffb9d1;
     }
@@ -48,27 +41,41 @@ we add the
     }
 }
 
-.nameee{
-    font-family: 'Shantell Sans', cursive;
-    text-align: center;
-    font-size: 8em;
-    font-size: 50px;
-    margin-bottom: auto;
-    align-items: center;
-    margin-left: 40%;    
 
+
+/*BOTH NAVIGATION BARS*/
+
+.menu-area{
+    margin-top: 2em;
+    margin-bottom: 10em;
 }
 
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
 
+.menu ul{
+    text-align: right;
+}
+.menu li{
+    
+    list-style: none;
+    margin-right: 20px;
+    display: inline-block;
 
+}
+.menu a{
+    color: white;
+    text-align: right;
+    text-decoration: none;
+}
 
-
-
-
-
-
-
-
+.menu a:hover {
+    text-decoration: underline wavy;
+    text-decoration-color: white;
+}
 
 
 
@@ -79,13 +86,10 @@ we add the
 .side-nav li{
     list-style: none;
     list-style-type: none;
-    
-    margin-bottom: 20px;
-    margin-left: 25px;
+    margin-bottom: 1em;
 }
 
 .side-nav ul {
-    transform: translateY(70px);
     list-style: none;
 }
 
@@ -112,82 +116,36 @@ we add the
 
 
 
-.menu-area{
-    align-self: flex-start;
+
+
+
+
+
+
+.intro-mid{
+    text-align: center;
 }
-.menu{
-    align-self: flex-start;
-    text-align: right;
-    transform: translateY(-10px);
-    text-decoration: none;
-}
-.menu li {
-    list-style: none;
-    display: inline-block;
-    margin-right: 20px;
-}
-.menu a{
-    text-decoration: none;
-    font-family: "Optima", sans-serif;
-}
-.menu a:hover {
-    text-decoration: underline wavy;
-    text-decoration-color: white;
-}
-
-
-
-
-
-
-
-
-
-
-
-.material-symbols-outlined {
-    list-style: none;
-    font-variation-settings:
-    'FILL' 0,
-    'wght' 400,
-    'GRAD' 0,
-    'opsz' 48
-    
-  }
-
-
-
-
-
-
-
 
 .gif-1{
-    align-items: left;
-    margin-left: 5%;
-    margin-top: 10%;
     height: auto;
-    width: 30%;
+    width: 80%;
 }
+
+/*ALL CONTENTS IN THE CAPTION*/
+
+.nameee{
+    font-family: 'Shantell Sans', cursive;
+    font-size: 2em;
+}
+
 
 .caption {
-    margin-top: -20%;
-    text-align: center;
-    /*font-size: 8em;*/
-    font-size: 50px;
+    font-size: 2.5em;
     font-family: 'Josefin Sans', sans-serif;
-    margin-bottom: auto;
-    align-items: center;
-    margin-left: 40%;
 }
 .caption-2 {
-    text-align: center;
-    /*font-size: 8em;*/
-    font-size: 50px;
+    font-size: 2em;
     font-family: 'Josefin Sans', sans-serif;
-    margin-bottom: auto;
-    align-items: center;
-    margin-left: 40%;
 }
 
 
@@ -199,182 +157,6 @@ we add the
 
 
 
-
-
-
-
-
-.about {
-    height: 100vh;
-    font-family: 'Josefin Sans', sans-serif;
-    background-color: hsl(263deg 29% 32%);
-}
-
-
-
-
-
-.skills{
-    transform: translateY(20%) translateX(20%);
-    border-radius: 20px;
-    height: 30%;
-    width: 30%;
-    position:relative;
-    border: solid 2px white;
-   /* padding: 1rem 1rem 1rem;*/
-}
-
-
-
-.skills .circles {
-    display: flex;
-    justify-content:left;
-}
-  
-.skills .circle {
-    width: 1rem;
-    height: 1rem;
-    border-radius: 50%;
-    background-color: white;
-    margin: 1rem 0.75rem 1rem;
-    /*margin-bottom: 0.5rem;*/
-}
-
-.skills .line {
-    position: absolute;
-    left: 0;
-    right: 0;
-    height: 2px;
-    margin-top: 3rem;
-    background-color: white;
-}
-
-
-.skills .h2{
-    padding-top: 1rem;
-    margin-top: 2rem;
-}
-.skills .p{
-    padding-top: 1rem;
-    margin-top: 0.5rem;
-}
-
-
-
-
-
-
-
-.courses{
-    transform: translateY(-30%);
-    border-radius: 20px;
-    margin-left: 50%;
-    height: 30%;
-    width: 40%;
-    position:relative;
-    border: solid 2px white;
-
-}
-
-.courses .circles {
-    display: flex;
-    justify-content:left;
-}
-  
-.courses .circle {
-    width: 1rem;
-    height: 1rem;
-    border-radius: 50%;
-    background-color: white;
-    margin: 1rem 0.75rem 1rem;
-    /*margin-bottom: 0.5rem;*/
-}
-
-.courses .line {
-    position: absolute;
-    left: 0;
-    right: 0;
-    height: 2px;
-    margin-top: 3rem;
-    background-color: white;
-}
-
-
-.courses .h2{
-    padding-top: 1rem;
-    margin-top: 2rem;
-}
-.courses .p{
-    padding-top: 1rem;
-    margin-top: 0.5rem;
-}
-
-
-
-
-
-
-
-
-.why-me{
-   transform: translateY(10%) translateX(10%);
-    border-radius: 20px;
-    height: 30%;
-    width: 80%;
-    position:relative;
-    border: solid 2px white;
-
-}
-
-.why-me .circles {
-    display: flex;
-    justify-content:left;
-}
-  
-.why-me .circle {
-    width: 1rem;
-    height: 1rem;
-    border-radius: 50%;
-    background-color: white;
-    margin: 1rem 0.75rem 1rem;
-    /*margin-bottom: 0.5rem;*/
-}
-
-.why-me .line {
-    position: absolute;
-    left: 0;
-    right: 0;
-    height: 2px;
-    margin-top: 3rem;
-    background-color: white;
-}
-
-
-.why-me .h2{
-    padding-top: 1rem;
-    margin-top: 2rem;
-}
-.why-me .p{
-    padding-top: 1rem;
-    margin-top: 0.5rem;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-.interest {
-    height: 100vh;
-    font-family: 'Josefin Sans', sans-serif;
-    background-color: hsl(274deg 4% 16%);
-}
 
 
 
