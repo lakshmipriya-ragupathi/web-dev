@@ -12,6 +12,17 @@ html, body {
     margin: 0;
     padding: 0;
 }
+
+
+
+
+
+
+
+
+
+/*INTRODUCTION SECTION*/
+
 .intro {
     height: 100vh;
     width: 100%;
@@ -31,7 +42,7 @@ html, body {
 @keyframes neon {
     0%,
     40%{
-        offset-x(mandatory) | offset-y(mandatory) | blur-radius | color
+        /*offset-x(mandatory) | offset-y(mandatory) | blur-radius | color*/
         text-shadow: 0 0 2px #6e3f56;
         color: #ffb9d1;
     }
@@ -46,8 +57,7 @@ html, body {
 /*BOTH NAVIGATION BARS*/
 
 .menu-area{
-    margin-top: 2em;
-    margin-bottom: 10em;
+    margin-bottom: 10%;
 }
 
 .menu{
@@ -99,19 +109,10 @@ html, body {
 
 .side-nav a:hover + .icon-desc{
     display:inline-block;
-    font-family: "Blippo", fantasy;
+    font-family: 'Josefin Sans', sans-serif;
     vertical-align: middle;
 
 }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -128,14 +129,14 @@ html, body {
 
 .gif-1{
     height: auto;
-    width: 80%;
+    width: 60%;
 }
 
 /*ALL CONTENTS IN THE CAPTION*/
 
 .nameee{
     font-family: 'Shantell Sans', cursive;
-    font-size: 2em;
+    font-size: 3em;
 }
 
 
@@ -144,12 +145,174 @@ html, body {
     font-family: 'Josefin Sans', sans-serif;
 }
 .caption-2 {
-    font-size: 2em;
+    font-size: 3em;
     font-family: 'Josefin Sans', sans-serif;
+}
+
+/*INTRODUCTION SECTION ENDS*/
+
+
+
+
+
+/************************************************************************************************************************************************************************************************************************************************/
+
+
+
+
+
+
+/*ABOUT SECTION*/
+
+.about {
+    height: 100vh;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: hsl(263deg 29% 32%);
 }
 
 
 
+.skills{
+    transform: translateY(20%) translateX(20%);
+    border-radius: 20px;
+    height: 30%;
+    width: 30%;
+    position:relative;
+    border: solid 5px white;
+    padding: 1rem 1rem 1rem;
+}
+
+
+
+.skills .circles {
+    display: flex;
+    justify-content:left;
+}
+  
+.skills .circle {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: white;
+    margin: 1rem 0.75rem 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.skills .line {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 2px;
+    margin-top: 3rem;
+    background-color: white;
+}
+
+
+.skills .h2{
+    padding-top: 1rem;
+    margin-top: 3rem;
+}
+.skills .p{
+    padding-top: 1rem;
+    margin-top: 0.5rem;
+}
+
+.quote-1{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    transform: translateY(20%) translateX(-20%);
+    
+}
+
+.quote-1 p{
+    text-align: right;
+    font-size: 3em;
+    font-family: 'Dancing Script', cursive;
+    margin-left: 40%;
+
+}
+
+.courses{
+    border-radius: 20px;
+    height: 30%;
+    width: 30%;
+    position:relative;
+    border: solid 5px white;
+    transform: translateX(-20%) translateY(10%);
+
+}
+
+.courses .circles {
+    display: flex;
+    justify-content:left;
+}
+  
+.courses .circle {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: white;
+    margin: 1rem 0.75rem 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.courses .line {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 2px;
+    margin-top: 3rem;
+    background-color: white;
+}
+
+
+.courses .h2{
+    padding-top: 1rem;
+    margin-top: 3rem;
+}
+.courses .p{
+    padding-top: 1rem;
+    margin-top: 0.5rem;
+}
+
+
+
+.why-me{
+    transform: translateY(-40%) translateX(15%);
+    
+}
+.why-me h2{
+    font-size: 3em;
+}
+
+.why-me p{
+    font-size: 1.5em;
+}
+.link-uni{
+    text-decoration: wavy;
+    color: white;
+}
+
+
+
+/*ABOUT SECTION ENDS*/
+
+/************************************************************************************************************************************************************************************************************************************************/
+
+
+/*INTEREST */
+
+
+
+.interest {
+    height: 100vh;
+    background-color: hsl(274deg 4% 16%);
+}
+
+
+
+/*INTEREST ENDS*/
 
 
 
