@@ -311,12 +311,46 @@ html, body {
 }
 
 
+.interest-heading{
+    font-family: 'Chivo Mono', monospace;
+    font-size: 2rem;
+    margin-left: 2%;
+    margin-bottom: 5%;
+}
 
+.proj-title{
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
+    text-align: center;
+
+
+    background-image: linear-gradient(to right, rgb(117, 76, 110) 0%, rgb(117, 76, 110) 100%);
+    background-repeat: repeat-x;
+    background-size: 100% 2px;
+    background-position: 0 105%;
+    transition: background-size 0.25s ease-out;
+
+}
+
+.project-info{
+    font-size: 2rem;
+    font-family: 'Josefin Sans', sans-serif;
+    justify-content: center;
+}
+
+.interest-row{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+
+  
+  .proj-title:hover {
+    background-size: 100% 50%;
+    color: #fff;
+  }
+  
 /*INTEREST ENDS*/
-
-
-
-
 
 
 
