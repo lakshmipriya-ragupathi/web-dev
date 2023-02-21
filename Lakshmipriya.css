@@ -15,16 +15,10 @@ html, body {
 
 
 
-
-
-
-
-
-
 /*INTRODUCTION SECTION*/
 
 .intro {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     /*to make double coloured background using linear gradient*/
     background: linear-gradient(to right, rgb(42, 35, 42) 0%,  rgb(42, 35, 42) 30%, rgb(117, 76, 110) 30%, rgb(117, 76, 110) 100%);
@@ -34,7 +28,7 @@ html, body {
 .name-top{
     font-family: 'Dancing Script', cursive;
     font-weight: bolder;
-    font-size: 3rem;
+    font-size: 3vw;
     animation: neon 2s ease infinite;
     text-align: center;
 }
@@ -57,7 +51,7 @@ html, body {
 /*BOTH NAVIGATION BARS*/
 
 .menu-area{
-    margin-bottom: 10%;
+    margin-bottom: 20vh;
 }
 
 .menu{
@@ -70,9 +64,9 @@ html, body {
     text-align: right;
 }
 .menu li{
-    
+    font-size: 1vw;
     list-style: none;
-    margin-right: 20px;
+    margin-right: 2vw;
     display: inline-block;
 
 }
@@ -96,7 +90,7 @@ html, body {
 .side-nav li{
     list-style: none;
     list-style-type: none;
-    margin-bottom: 1em;
+    margin-bottom: 1vh;
 }
 
 .side-nav ul {
@@ -136,16 +130,16 @@ html, body {
 
 .nameee{
     font-family: 'Shantell Sans', cursive;
-    font-size: 3em;
+    font-size: 3vw;
 }
 
 
 .caption {
-    font-size: 2.5em;
+    font-size: 2.5vw;
     font-family: 'Josefin Sans', sans-serif;
 }
 .caption-2 {
-    font-size: 3em;
+    font-size: 3vw;
     font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -161,11 +155,8 @@ html, body {
 
 
 
-
-/*ABOUT SECTION*/
-
 .about {
-    height: 100vh;
+    height: 100%;
     font-family: 'Josefin Sans', sans-serif;
     background-color: hsl(263deg 29% 32%);
 }
@@ -173,13 +164,12 @@ html, body {
 
 
 .skills{
-    transform: translateY(20%) translateX(20%);
     border-radius: 20px;
     height: 30%;
     width: 30%;
     position:relative;
-    border: solid 5px white;
-    padding: 1rem 1rem 1rem;
+    border: solid 2px white;
+    padding: 1vw 1vw 1vw;
 }
 
 
@@ -190,12 +180,12 @@ html, body {
 }
   
 .skills .circle {
-    width: 1rem;
-    height: 1rem;
+    width: 1vw;
+    height: 1vw;
     border-radius: 50%;
     background-color: white;
-    margin: 1rem 0.75rem 1rem;
-    margin-bottom: 0.5rem;
+    margin: 1vw 0.75vw 1vw;
+    margin-bottom: 0.5vw;
 }
 
 .skills .line {
@@ -203,45 +193,47 @@ html, body {
     left: 0;
     right: 0;
     height: 2px;
-    margin-top: 3rem;
+    margin-top: 3vw;
     background-color: white;
 }
 
 
 .skills .h2{
-    padding-top: 1rem;
-    margin-top: 3rem;
+    font-size: 3vw;
+    padding-top: 1vh;
+    margin-top: 3vh;
 }
 .skills .p{
-    padding-top: 1rem;
-    margin-top: 0.5rem;
+    font-size: 1vw;
+    padding-top: 1vh;
+    margin-top: 0.5vh;
 }
 
 .quote-1{
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    transform: translateY(20%) translateX(-20%);
     
 }
 
 .quote-1 p{
     text-align: right;
-    font-size: 3em;
+    font-size: 3vw;
     font-family: 'Dancing Script', cursive;
-    margin-left: 40%;
 
 }
+
 
 .courses{
     border-radius: 20px;
     height: 30%;
     width: 30%;
     position:relative;
-    border: solid 5px white;
-    transform: translateX(-20%) translateY(10%);
-
+    border: solid 2px white;
+    padding: 1vw 1vw 1vw;
 }
+
+
 
 .courses .circles {
     display: flex;
@@ -249,12 +241,12 @@ html, body {
 }
   
 .courses .circle {
-    width: 1rem;
-    height: 1rem;
+    width: 1vw;
+    height: 1vw;
     border-radius: 50%;
     background-color: white;
-    margin: 1rem 0.75rem 1rem;
-    margin-bottom: 0.5rem;
+    margin: 1vw 0.75vw 1vw;
+    margin-bottom: 0.5vw;
 }
 
 .courses .line {
@@ -262,37 +254,36 @@ html, body {
     left: 0;
     right: 0;
     height: 2px;
-    margin-top: 3rem;
+    margin-top: 3vw;
     background-color: white;
 }
 
 
 .courses .h2{
-    padding-top: 1rem;
-    margin-top: 3rem;
+    font-size: 3vw;
+    padding-top: 1vh;
+    margin-top: 3vh;
 }
 .courses .p{
-    padding-top: 1rem;
-    margin-top: 0.5rem;
+    font-size: 1vw;
+    padding-top: 1vh;
+    margin-top: 0.5vh;
 }
 
 
 
-.why-me{
-    transform: translateY(-40%) translateX(15%);
-    
-}
 .why-me h2{
-    font-size: 3em;
+    font-size: 3vw;
 }
 
 .why-me p{
-    font-size: 1.5em;
+    font-size: 2vw;
 }
 .link-uni{
     text-decoration: wavy;
     color: white;
 }
+
 
 
 
@@ -306,34 +297,32 @@ html, body {
 
 
 .interest {
-    height: 100vh;
     background-color: hsl(274deg 4% 16%);
 }
 
-
 .interest-heading{
     font-family: 'Chivo Mono', monospace;
-    font-size: 2rem;
+    font-size: 3vw;
     margin-left: 2%;
     margin-bottom: 5%;
 }
 
 .proj-title{
     font-family: 'Great Vibes', cursive;
-    font-size: 3rem;
+    font-size: 2vw;
     text-align: center;
 
 
     background-image: linear-gradient(to right, rgb(117, 76, 110) 0%, rgb(117, 76, 110) 100%);
     background-repeat: repeat-x;
-    background-size: 100% 2px;
+    background-size: 100% 0vw;
     background-position: 0 105%;
     transition: background-size 0.25s ease-out;
 
 }
 
 .project-info{
-    font-size: 2rem;
+    font-size: 2vw;
     font-family: 'Josefin Sans', sans-serif;
     justify-content: center;
 }
@@ -348,12 +337,7 @@ html, body {
   .proj-title:hover {
     background-size: 100% 50%;
     color: #fff;
+    cursor: pointer;
   }
   
 /*INTEREST ENDS*/
-
-
-
-
-
-
