@@ -19,6 +19,7 @@ html, body {
 
 .intro {
     height: 100%;
+    min-height: 100vh; 
     width: 100%;
     /*to make double coloured background using linear gradient*/
     background: linear-gradient(to right, rgb(42, 35, 42) 0%,  rgb(42, 35, 42) 30%, rgb(117, 76, 110) 30%, rgb(117, 76, 110) 100%);
@@ -90,6 +91,7 @@ html, body {
 .side-nav li{
     list-style: none;
     list-style-type: none;
+    font-size: 1vw;
     margin-bottom: 1vh;
 }
 
@@ -98,7 +100,6 @@ html, body {
 }
 
 .icon-desc {
-    font-size: 2vw;
     display: none;
 }
 
@@ -131,16 +132,16 @@ html, body {
 
 .nameee{
     font-family: 'Shantell Sans', cursive;
-    font-size: 3vw;
+    font-size: calc(max(3vh, 3vw));
 }
 
 
 .caption {
-    font-size: 2.5vw;
+    font-size: calc(max(2.5vh,2.5vw));
     font-family: 'Josefin Sans', sans-serif;
 }
 .caption-2 {
-    font-size: 3vw;
+    font-size: calc(max(3vh, 3vw));
     font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -158,6 +159,7 @@ html, body {
 
 .about {
     height: 100%;
+    min-height: 100vh; 
     font-family: 'Josefin Sans', sans-serif;
     background-color: hsl(263deg 29% 32%);
 }
@@ -298,6 +300,8 @@ html, body {
 
 
 .interest {
+    height: 100%;
+    min-height: 100vh; 
     background-color: hsl(274deg 4% 16%);
 }
 
@@ -342,4 +346,3 @@ html, body {
   }
   
 /*INTEREST ENDS*/
-
