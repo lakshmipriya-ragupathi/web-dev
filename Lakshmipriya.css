@@ -29,7 +29,7 @@ html, body {
 .name-top{
     font-family: 'Dancing Script', cursive;
     font-weight: bolder;
-    font-size: 3vw;
+    font-size: calc(max(3vw,3vh));
     animation: neon 2s ease infinite;
     text-align: center;
 }
@@ -52,7 +52,7 @@ html, body {
 /*BOTH NAVIGATION BARS*/
 
 .menu-area{
-    margin-bottom: 20vh;
+    margin-bottom: calc(min(20vh,20vw));
 }
 
 .menu{
@@ -65,7 +65,7 @@ html, body {
     text-align: right;
 }
 .menu li{
-    font-size: 1vw;
+    font-size: calc(max(1vh,1vw));
     list-style: none;
     margin-right: 2vw;
     display: inline-block;
@@ -91,7 +91,7 @@ html, body {
 .side-nav li{
     list-style: none;
     list-style-type: none;
-    font-size: 1vw;
+    font-size: calc(max(1vh,1vw));
     margin-bottom: 1vh;
 }
 
@@ -120,6 +120,7 @@ html, body {
 
 
 .intro-mid{
+
     text-align: center;
 }
 
@@ -127,6 +128,13 @@ html, body {
     height: auto;
     width: 60%;
 }
+
+/*
+@media (max-width: 768px) {
+ .gif-1{
+    display: none;
+}
+}*/
 
 /*ALL CONTENTS IN THE CAPTION*/
 
@@ -202,12 +210,12 @@ html, body {
 
 
 .skills .h2{
-    font-size: 3vw;
+    font-size: calc(max(3vh,3vw));
     padding-top: 1vh;
     margin-top: 3vh;
 }
 .skills .p{
-    font-size: 1vw;
+    font-size: calc(max(1vh,1vw));
     padding-top: 1vh;
     margin-top: 0.5vh;
 }
@@ -221,7 +229,7 @@ html, body {
 
 .quote-1 p{
     text-align: right;
-    font-size: 3vw;
+    font-size: calc(max(3vh,3vw));
     font-family: 'Dancing Script', cursive;
 
 }
@@ -263,12 +271,12 @@ html, body {
 
 
 .courses .h2{
-    font-size: 3vw;
+    font-size: calc(max(3vh,3vw));
     padding-top: 1vh;
     margin-top: 3vh;
 }
 .courses .p{
-    font-size: 1vw;
+    font-size: calc(max(1vh,1vw));
     padding-top: 1vh;
     margin-top: 0.5vh;
 }
@@ -276,11 +284,11 @@ html, body {
 
 
 .why-me h2{
-    font-size: 3vw;
+    font-size: calc(max(3vh,3vw));
 }
 
 .why-me p{
-    font-size: 2vw;
+    font-size: calc(max(2vh,2vw));
 }
 .link-uni{
     text-decoration: wavy;
@@ -307,14 +315,14 @@ html, body {
 
 .interest-heading{
     font-family: 'Chivo Mono', monospace;
-    font-size: 3vw;
+    font-size: calc(max(3vh,3vw));
     margin-left: 2%;
     margin-bottom: 5%;
 }
 
 .proj-title{
     font-family: 'Great Vibes', cursive;
-    font-size: 2vw;
+    font-size: calc(max(2vh,2vw));
     text-align: center;
 
 
@@ -327,7 +335,7 @@ html, body {
 }
 
 .project-info{
-    font-size: 2vw;
+    font-size: calc(max(2vw,2vh));
     font-family: 'Josefin Sans', sans-serif;
     justify-content: center;
 }
@@ -346,3 +354,5 @@ html, body {
   }
   
 /*INTEREST ENDS*/
+
+
