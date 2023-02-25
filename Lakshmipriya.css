@@ -141,17 +141,41 @@ html, body {
 .nameee{
     font-family: 'Shantell Sans', cursive;
     font-size: calc(max(3vh, 3vw));
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
 }
 
 
 .caption {
     font-size: calc(max(2.5vh,2.5vw));
     font-family: 'Josefin Sans', sans-serif;
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-delay:1s;
+    animation-fill-mode: forwards;
 }
 .caption-2 {
     font-size: calc(max(3vh, 3vw));
     font-family: 'Josefin Sans', sans-serif;
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 1.5s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
 }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 
 /*INTRODUCTION SECTION ENDS*/
 
@@ -395,4 +419,5 @@ html, body {
     text-decoration-color: white;
 }
 
-/*FOOTER ENDS*/
+
+
